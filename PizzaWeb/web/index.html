@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pizza House</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <form class="form-horizontal" action="pizza" method="POST">
+            <fieldset>
+
+            <!-- Form Name -->
+            <legend>Pizza Form</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="name">Customer Name</label>  
+              <div class="col-md-4">
+              <input id="name" name="customer_name" type="text" placeholder="Customer Name" class="form-control input-md" required="">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="address">Address</label>  
+              <div class="col-md-4">
+              <input id="address" name="address" type="text" placeholder="Address" class="form-control input-md" required="">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="phone">Phone</label>  
+              <div class="col-md-4">
+              <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control input-md" required="">
+
+              </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="type">Type</label>
+              <div class="col-md-4">
+                <select id="type" name="pizza_type" class="form-control">
+                  <option value="chicken">Chicken</option>
+                  <option value="buff">Buff</option>
+                  <option value="pork">Pork</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="toppings">Toppings</label>
+              <div class="col-md-4">
+                <label class="checkbox-inline" for="toppings-0">
+                  <input type="checkbox" name="pizza_topping_type" id="toppings-0" value="cheese">
+                  Cheese
+                </label>
+                <label class="checkbox-inline" for="toppings-1">
+                  <input type="checkbox" name="pizza_topping_type" id="toppings-1" value="olive">
+                  Olive
+                </label>
+                <label class="checkbox-inline" for="toppings-2">
+                  <input type="checkbox" name="pizza_topping_type" id="toppings-2" value="sausage">
+                  Sausage
+                </label>
+              </div>
+            </div>
+
+            <!-- Multiple Radios (inline) -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="size">Size</label>
+              <div class="col-md-4"> 
+                <label class="radio-inline" for="size-0">
+                  <input type="radio" name="pizza_size" id="size-0" value="small" checked="checked">
+                  Small
+                </label> 
+                <label class="radio-inline" for="size-1">
+                  <input type="radio" name="pizza_size" id="size-1" value="medium">
+                  Medium
+                </label> 
+                <label class="radio-inline" for="size-2">
+                  <input type="radio" name="pizza_size" id="size-2" value="large">
+                  Large
+                </label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="amount">Amount</label>  
+              <div class="col-md-4">
+              <input id="phone" name="amount" type="text" placeholder=" " class="form-control input-md" required="">
+
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="discount">Discount</label>  
+              <div class="col-md-4">
+              <input id="phone" name="discount" type="text" placeholder=" " class="form-control input-md" required="">
+
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="service_charge">Service Charge</label>  
+              <div class="col-md-4">
+              <input id="phone" name="service_charge" type="text" placeholder=" " class="form-control input-md" required="">
+
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="total_amt">Total Amount</label>  
+              <div class="col-md-4">
+              <input id="phone" name="total_amt" type="text" placeholder=" " class="form-control input-md" required="">
+
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="save"></label>
+              <div class="col-md-4">
+                <button type="submit" id="save" name="save" class="btn btn-success">Submit</button>
+                <button type="reset" id="save" name="save" class="btn btn-danger">Reset</button>
+              </div>
+            </div>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
